@@ -39,13 +39,14 @@ let countdownInt;
 
 function startTimer() {
 
+
 if(TimerOn) {
 return;
 }
 TimerOn = true;
 countdownInt = setInterval(updateTimer , 1000 , userSelectedDate)
 startButton.disabled = true;
-
+inputData.setAttribute("disabled", "disabled");
 
 };
 
